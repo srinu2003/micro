@@ -1,6 +1,6 @@
 def message(input):
     if input==1:
-        print('Hello')
+        print('SANDep')
     elif input==2:
         print()
     elif input==3:
