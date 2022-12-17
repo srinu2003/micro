@@ -2,7 +2,7 @@ def message(input):
     if input==1:
         print('SANDep')
     elif input==2:
-        print()
+        print("RAHUL")
     elif input==3:
         print()
     elif input==4:
