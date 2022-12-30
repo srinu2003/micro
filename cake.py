@@ -1,24 +1,25 @@
-def message(input):
-    if input==1:
-        print('')
-    elif input==2:
-        print("RAHUL")
-    elif input==3:
-        print()
-    elif input==4:
-        print()
-    elif input==5:
-        print()
-    elif input==6:
-        print()
-    elif input==7:
-        print()
-    elif input==8:
-        print()
-    elif input==9:
-        print()
-    elif input==10:
-        print()
-    else:
-        print('invalied')
+from menu import flavors,weights,decorations;
+class Cake:
+    def __init__(this,weight,flavor,isCool,decoration,steps):
+        this.weight = weight
+        this.flavor = flavor
+        this.isCool = isCool
+        this.decoration = decoration
+        this.steps = steps
 
+    def printCake(this):
+        if this.isCool:
+            cool = "Yes"
+        else:
+            cool = "No"
+        if this.steps == 0:
+            this.steps = 'N/A'
+        print(
+            f'''    {this.flavor[0]}       {this.weight}       {this.decoration[0]}       {this.steps}        {cool}'''
+        )
+
+    def calculateCost(this):
+        cost = this.flavor[1] * this.weight + this.decoration[1]
+        if this.isCool:
+            cost += cost + cost * 0.2
+        return cost
