@@ -9,29 +9,12 @@ def generateReceipt(l):
     print('Total Cost : ',totalCost)
 
 orderList = []
-# Chocolatey v1.1.0
-# Chocolatey detected you are not running from an elevated command shell
-#  (cmd/powershell).
 
-#  You may experience errors!! - many functions/packages
-#  require admin rights. Only advanced users should run choco w/out an
-#  elevated shell. When you open the command shell, you should ensure
-#  that you do so with "Run as Administrator" selected. If you are
-#  attempting to use Chocolatey in a non-administrator setting, you
-#  must select a different location other than the default install
-#  location. See
-#  https://docs.chocolatey.org/en-us/choco/setup#non-administrative-install
-#  for details.
-
-
-#  Do you want to continue?([Y]es/[N]o):
-print(
-'''
-SR Cakes v1.0
+print('''SR Cakes v1.0
 Hello!!! Welcome to Srinivas' Cake Store..😋
 Pleasure to have you..😊
-'''
-)
+See https://github.com/srinu2003/micro for details.''')
+
 while True:
     print('Here is the list of flavors available:')
     
