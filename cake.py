@@ -14,8 +14,9 @@ class Cake:
             cool = "No"
         if this.steps == 0:
             this.steps = 'N/A'
-        print(
-            f'''    {this.flavor[0]}       {this.weight}       {this.decoration[0]}       {this.steps}        {cool}'''
+        else:
+            this.steps = str(this.steps)
+        print('| %s | %s | %s | %s | %s | %s |'%(this.flavor[0].center(15),str(this.weight).center(6),cool.center(5),this.decoration[0].center(12),this.steps.center(5),str(this.calculateCost()).center(5))
         )
 
     def calculateCost(this):
