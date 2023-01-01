@@ -1,11 +1,13 @@
 from menu import flavors,weights,decorations;
 from cake import Cake
-def generateReceipt(l):
+def generateReceipt(list):
     print("Please Review your order...")
-    print('| %s | %s | %s | %s | %s | %s | %s |'%('S.no'.center(4),'Flavor'.center(15),'Weight'.center(6),'Cool'.center(5),'Decoration'.center(12),'Steps'.center(5),'Cost'.center(5)))
-    print('-'*68)
+    header = '| %s | %s | %s | %s | %s | %s | %s |'%('S.no'.center(4),'Flavor'.center(15),'Weight'.center(6),'Cool'.center(5),'Decoration'.center(12),'Steps'.center(5),'Cost'.center(5))
+    print(header)
+    print('-'*len(header))
     totalCost = 0
-    for i,cake in enumerate(l):
+    # print("b value is %i and c value is %i "%(b,c))
+    for i,cake in enumerate(list):
         print('| %s'%str(i+1).center(4),end=' ')
         cake.printCake()
         totalCost += cake.calculateCost()
@@ -15,7 +17,7 @@ orderList = []
 
 print('''SR Cakes v1.0
 Hello!!! Welcome to Srinivas' Cake Store..😋
-Pleasure to have you..😊
+Nice to have order from you..😊
 See https://github.com/srinu2003/micro for details.''')
 
 while True:
@@ -61,7 +63,7 @@ while True:
 
     #ordering 
     orderList.append(Cake(weight,flavors[flavor],isCool,decorations[decoration],steps))
-    orderMore = input('Thank you for the order. Would you like to order more?[Y/N] ')
+    orderMore = input('Thank you for the order. Would you like to order more?([Y]es/[N]o): ')
     if orderMore == 'n':
         break
 
