@@ -2,8 +2,11 @@ from menu import flavors,weights,decorations;
 from cake import Cake
 def generateReceipt(l):
     print("Please Review your order...")
+    print('| %s | %s | %s | %s | %s | %s | %s |'%('S.no'.center(4),'Flavor'.center(15),'Weight'.center(6),'Cool'.center(5),'Decoration'.center(12),'Steps'.center(5),'Cost'.center(5)))
+    print('-'*68)
     totalCost = 0
-    for cake in l:
+    for i,cake in enumerate(l):
+        print('| %s'%str(i+1).center(4),end=' ')
         cake.printCake()
         totalCost += cake.calculateCost()
     print('Total Cost : ',totalCost)
@@ -36,35 +39,41 @@ while True:
     print('Here is the list of flavors available:')
     
     #flavours
-    print('s.no    flavor   cost/kg')
+    sno = 'S.no'
+    fl = 'Flavor'
+    cos = 'Cost / kg'
+    print('| %s| %s| %s |' %(sno.center(4),fl.center(15),cos.center(10)))
+    print('-'*38)
     for index,flavor in flavors.items():
-        print(f'{index}   {flavor[0]}    {flavor[1]}')
+        print('| %s| %s| %s |'%(str(index).center(4),flavor[0].center(15) ,str(flavor[1]).center(10)))
     flavor = int(input('Enter your choice:'))
     
     #Quantity
     print('Please choose the quantity:')
-    print('s.no    weight')
+    print('| %s| %s |'%(sno.center(4),'weight'.center(6)))
+    print('-'*16)
     for index,weight in enumerate(weights):
-        print(f'{index+1}   {weight}')
+        print('| %s| %s | '%(str(index).center(4),str(weight).center(6)))
     weight = weights[int(input('Weight:'))-1]
 
     #cool
     cool = input('Do you prefer your cake cool?([Y]es/[N]o): ')
     isCool = False
-    if cool == 'y'or'Y':
+    if cool == 'y' or cool =='Y':
         isCool = True
     
     #steps
     step = input('Do you need a step cake?([Y]es/[N]o): ').lower()
     steps = 0
     if step == 'y':
-        steps = int(input('Enter number of steps(Avilable:[1,2,3]): '))
+        steps = int(input('Enter number of steps(Available:[1,2,3]): '))
     
     #decaarations
     print('Choose any decoration:')
-    print('s.no    decoration   cost')
+    print('| %s| %s| %s |'%(sno.center(4),'Decoration'.center(12),'cost'.center(5)))
+    print('-'*30)
     for index,decoration in decorations.items():
-        print(f'{index}   {decoration[0]}    {decoration[1]}')
+        print('| %s| %s| %s |'%(str(index).center(4),decoration[0].center(12),str(decoration[1]).center(5)))
     decoration = int(input('Decoration: '))
 
     #ordering 
