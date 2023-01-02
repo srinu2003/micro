@@ -1,6 +1,6 @@
 # SR Cakes ```v1.0```
 ### flavors included:
- |S.No| Decoration    |  Cost |
+ |S.No| Flavours      |  Cost |
  |---:|:--------------|------:|
  | 1. | Chocolate     | 120/-
  | 2. | Pineapple     | 130/-
