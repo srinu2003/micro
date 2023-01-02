@@ -2,16 +2,16 @@
 ### flavors included:
  |S.No| Decoration    |  Cost |
  |---:|:--------------|------:|
- | 1. | Chocolate     | 
- | 2. | Pineapple     | 
- | 3. | Vanilla       | 140
- | 4. | Strawberry    | 150
- | 5. | Butterscotch  | 160 
- | 6. | Red Velvet    | 170 
- | 7. | Fruit         | 180 
- | 8. | Rasmalai      | 190 
- | 9. | Tim Tam       | 200 
- | 10.| Banana        | 210
+ | 1. | Chocolate     | 120/-
+ | 2. | Pineapple     | 130/-
+ | 3. | Vanilla       | 140/-
+ | 4. | Strawberry    | 150/-
+ | 5. | Butterscotch  | 160/-
+ | 6. | Red Velvet    | 170/-
+ | 7. | FruitC        | 180/-
+ | 8. | Rasmalai      | 190/-
+ | 9. | Tim Tam       | 200/-
+ | 10.| Banana        | 210/-
 
 ### decorations included:
 | S.No   |    Decoration    |  Cost|
