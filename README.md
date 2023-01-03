@@ -1,4 +1,8 @@
 # SR Cakes ```v1.0```
+This project is a CLI interface for ordering a Cake from a Cake Store
+The following are the list of itemas included in this
+
+
 ### flavors included:
  |S.No| Flavours      |  Cost |
  |---:|:--------------|------:|
