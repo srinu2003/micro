@@ -2,12 +2,11 @@
 This project is a CLI interface for ordering a Cake from a Cake Store<br>
 The following are the list of itemas included in this
 # Booths multiplication algorithm
-$$
-(-6) \times (4)=?
-$$
-$$
-Q = (-6)_{2}; Q_{-1}=0;M = (4)_{2}
-$$
+$$(-6) \times (4)=?$$
+
+ $$Q = (-6)_{2}$$
+ 
+ $$Q_{-1} =0;M = (-4)_{2}$$
 ```
  Q = 1010  ;  N = 4
  M = 0100
