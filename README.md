@@ -23,7 +23,7 @@ $$(-6) \times (4)=?$$
 |`0010`|`0000`|`1`     |0 `[AQ] = 0010 0000`|
 
 
-### flavors included:
+### flavours included:
 |S.No| Flavours      |  Cost |
 |---:|:--------------|------:|
 | 1. | Chocolate     | 120/-
